@@ -1,0 +1,90 @@
+#header{
+    margin-bottom: 50px; 
+    background: #008ae6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+body{
+    background: #e6f5ff;
+}
+a{
+	text-decoration: none;
+}
+
+li{
+    display: inline;
+}
+
+#form{
+   text-align: center;
+   padding-bottom: 2px;
+}
+
+#send{
+    border: 2px powderblue solid;
+    padding: 8px;
+    border-radius: 4px;
+    background: green;
+}
+
+input[type="email"]{
+	font-size: 20px;
+	border-radius: 4px;
+    border-color: #008ae6;
+}
+
+#productVideo{
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+}
+
+iframe{
+    background: powderblue;
+}
+
+.productInfo{
+    display: flex;
+    margin-top: 120px
+}
+
+.product{
+    text-align: justify;
+    flex: 1;
+    padding: 8px;
+    margin: 0px 10px 40px;
+    background: powderblue;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.item{
+     border: 2px green solid;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 30px;
+    flex: 1; 
+}
+
+button{
+	margin: auto;
+	display: block;
+	width: 90%;	
+	border: none;
+	padding: 8px;
+    background: green;
+}
+
+@media(min-width: 600px){
+	.itemInfo{
+    display: flex;
+    justify-content: center;
+    }
+}
