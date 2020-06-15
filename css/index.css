@@ -1,6 +1,6 @@
 #header{
     margin-bottom: 50px; 
-    background: #008ae6;
+    background: powderblue;
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,27 +35,21 @@ input[type="email"]{
     border-color: #008ae6;
 }
 
-#productVideo{
-    font-size: 30px;
-    text-align: center;
-    font-style: oblique;
-}
 
+#productVideo{
+background: green;
+}
 iframe{
     background: powderblue;
 }
 
 .productInfo{
-    display: flex;
-    margin-top: 120px
+    margin-top: 120px;
 }
 
 .product{
     text-align: justify;
-    flex: 1;
     padding: 8px;
-    margin: 0px 10px 40px;
-    background: powderblue;
 }
 
 iframe{
@@ -64,13 +58,12 @@ iframe{
     margin-bottom: 50px;
 }
 
-
 .item{
-     border: 2px green solid;
+    border: 2px green solid;
     border-radius: 6px;
     padding: 8px;
-    margin: 30px;
-    flex: 1; 
+    margin-bottom: 20px;
+    flex-basis: 30%;
 }
 
 button{
@@ -84,7 +77,7 @@ button{
 
 @media(min-width: 600px){
 	.itemInfo{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: space-between;
     }
 }
