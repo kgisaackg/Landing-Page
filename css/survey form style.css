@@ -1,0 +1,39 @@
+body{
+  margin: auto;
+  background:  #66ff99;
+}
+
+h1, p{
+  text-align: center;
+}
+
+#survey-form{
+  width: 50%;
+  margin: 20px auto;
+  padding: 0px 40px;
+  background-color: #00b33c;
+}
+
+label{
+  display: block;
+  padding: 10px 0px;
+}
+
+textarea, #name, #email, #number, #submit,
+#dropdown{
+  width: 100%;
+  height: 20px;
+}
+
+textarea{
+  margin: 0;
+  height: 50px;
+}
+#submit{
+  height: 30px; 
+  border: none;
+  border-radius: 10px;
+  background-color:#66ff99;
+  margin: 20px 0px 20px;
+  font-weight: bold;
+}

@@ -1,16 +1,29 @@
-#header{
-    margin-bottom: 50px; 
-    background: powderblue;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
 body{
-    background: #e6f5ff;
+    background: #f2f2f2;
 }
+#header{
+    position: sticky;
+    background-color: #37a0ae;
+    text-align: center;
+    top: 0;
+}
+
+#header h1{
+    padding: 4px 10px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
 a{
-	text-decoration: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-link :hover{
+    padding: 4px;
+    text-transform: uppercase;
+    border-radius: 2px;
 }
 
 li{
@@ -23,43 +36,59 @@ li{
 }
 
 #send{
-    border: 2px powderblue solid;
-    padding: 8px;
+    padding: 2px 4px;
     border-radius: 4px;
-    background: green;
 }
 
 input[type="email"]{
-	font-size: 20px;
 	border-radius: 4px;
-    border-color: #008ae6;
 }
 
-iframe{
-    background: powderblue;
+#about{
+   width: 70%;
+   margin: auto;
 }
 
-.productInfo{
-    margin-top: 120px;
+#skills{
+	width: 75%;
+    margin: auto;
+   
 }
 
-.product{
-    text-align: justify;
+.skillType{
+	text-align: justify;	
     padding: 8px;
+    border-bottom: 2px solid #37a0ae;
+}
+
+#aboutVideo{
+	font-size: 25px;
+	color: #37a0ae;
+}
+#videoContainer{
+   padding: 10px;
+   text-align: center;
+   font-style: oblique;
+   font-size: 19px;
 }
 
 iframe{
     display: block;
     margin: auto;
-    margin-bottom: 50px;
 }
 
 .item{
-    border: 2px green solid;
+    border: 2px #b0e0e6 solid;
     border-radius: 6px;
     padding: 8px;
-    margin-bottom: 20px;
     flex-basis: 30%;
+    margin-bottom: 20px;
+    background-color: #b0e0e6;
+}
+
+.item h3{
+    border-bottom: 2px #37a0ae solid;
+    margin-top: 0px;
 }
 
 button{
@@ -67,12 +96,18 @@ button{
 	display: block;
 	width: 90%;	
 	border: none;
-	padding: 8px;
-    background: green;
+    padding: 8px;
+    background-color: #37a0ae;
 }
 
-@media(min-width: 600px){
-	.itemInfo{
+#footer{
+    background-color: #37a0ae;
+    padding: 10px;
+    text-align: center;
+}
+
+@media(min-width: 700px){
+	#projects{
         display: flex;
         justify-content: space-between;
     }
