@@ -1,6 +1,7 @@
 body{
   margin: auto;
   background:  #66ff99;
+  font-family: sans-serif;
 }
 
 h1, p{
@@ -11,7 +12,7 @@ h1, p{
   width: 50%;
   margin: 20px auto;
   padding: 0px 40px;
-  background-color: #00b33c;
+  background-color: #07c747;
 }
 
 label{
@@ -29,6 +30,7 @@ textarea{
   margin: 0;
   height: 50px;
 }
+
 #submit{
   height: 30px; 
   border: none;
@@ -36,4 +38,10 @@ textarea{
   background-color:#66ff99;
   margin: 20px 0px 20px;
   font-weight: bold;
+}
+
+
+#submit:hover{
+  background-color: #049e38;
+  border: 2px solid #027428;
 }

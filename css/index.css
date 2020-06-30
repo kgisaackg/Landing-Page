@@ -1,10 +1,15 @@
 body{
     background: #f2f2f2;
+    font-family: sans-serif;
+
 }
+
 #header{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     background-color: #37a0ae;
     text-align: center;
+    left: 0;
     top: 0;
 }
 
@@ -21,27 +26,15 @@ a{
 
 
 .nav-link :hover{
-    padding: 4px;
-    text-transform: uppercase;
-    border-radius: 2px;
+    text-decoration: underline;
 }
 
 li{
     display: inline;
 }
 
-#form{
-   text-align: center;
-   padding-bottom: 2px;
-}
-
-#send{
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-input[type="email"]{
-	border-radius: 4px;
+main{
+	margin-top: 200px;
 }
 
 #about{
@@ -50,7 +43,7 @@ input[type="email"]{
 }
 
 #skills{
-	width: 75%;
+	width: 70%;
     margin: auto;
    
 }
@@ -65,6 +58,7 @@ input[type="email"]{
 	font-size: 25px;
 	color: #37a0ae;
 }
+
 #videoContainer{
    padding: 10px;
    text-align: center;
@@ -75,6 +69,8 @@ input[type="email"]{
 iframe{
     display: block;
     margin: auto;
+    width:60%;
+    height: auto;
 }
 
 .item{
@@ -100,6 +96,14 @@ button{
     background-color: #37a0ae;
 }
 
+a > button:hover{
+	 background-color: #2a666e;
+}
+
+.viewed{
+    background-color: #2a666e;
+}
+
 #footer{
     background-color: #37a0ae;
     padding: 10px;
@@ -111,4 +115,9 @@ button{
         display: flex;
         justify-content: space-between;
     }
+
+iframe{
+    width:60%;
+    height: 340px;
+}
 }
