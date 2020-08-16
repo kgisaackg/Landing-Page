@@ -17,14 +17,13 @@ class UI {
             <td>${task.startHour}:${task.startMinute}</td>
             <td>${task.endHour}:${task.endMinute}</td>
             <td><button class="btn btn-del">Del</button>
-            <button class="btn btn-edit">Edit</button></td>
         `;
         tbody.appendChild(tableRow);
     }
 
     static removeFromList(e) {
-        console.log(e.target.classList.contains('btn-del'));
-        console.log(e.target.parentElement.parentElement.remove());
+        if (e.target.classList.contains('btn-del'))
+            e.target.parentElement.parentElement.remove();
     }
 
     static clearFields() {
@@ -36,34 +35,29 @@ class UI {
     }
 }
 
-
-//************************  Events  *************************** 
-
+//Add Tasks
 document.querySelector('#btn-save').addEventListener('click', (e) => {
     e.preventDefault();
 
     const tstName = document.querySelector('#taskName').value;
-    let startHr = parseInt(document.querySelector('#startHour').value);
-    let startMin = parseInt(document.querySelector('#startMin').value);
+    const startHr = parseInt(document.querySelector('#startHour').value);
+    const startMin = parseInt(document.querySelector('#startMin').value);
     const endHr = document.querySelector('#endHour').value;
     const endMin = document.querySelector('#endMin').value;
 
-    if ((startHr >= 0 && startHr <= 23) && (startMin >= 0 && startMin <= 59)) {
-        let task = new Task(tstName, startHr, startMin, endHr, endMin);
-        UI.addToList(task);
-        Storage.addToStorage(task);
-        UI.clearFields();
+    const task = new Task(tstName, startHr, startMin, endHr, endMin);
+    UI.addToList(task);
+    UI.clearFields();
 
-    } else {
-        console.log('min 0- 59 and hr 0 - 23');
-    }
+});
+
+//Delete Task
+document.querySelector('.taskList').addEventListener('click', (e) => {
+    UI.removeFromList(e);
 });
 
 
-document.querySelector('.taskList').addEventListener('click', UI.removeFromList);
-//************************  end of events  *************************** 
-
-
+/*
 class Storage {
 
     static getTasks() {
@@ -71,20 +65,37 @@ class Storage {
         if (localStorage.getItem('tasks') === null)
             tasks = [];
         else
-            tasks = JSON.parse(localStorage.getItem('tasks'));
+            tasks = Storage.getFromStorage();
         return tasks;
     }
 
     static addToStorage(task) {
-        const tasks = getTasks();
-        console.log(Array.isArray(tasks));
+        const tasks = Storage.getTasks();
         tasks.push(task);
         localStorage.setItem('tasks', JSON.stringify(tasks));
-        console.log('This i now saved in database');
+    }
+
+    static removeFromStorage() {
+        const tasks = Storage.getFromStorage().filter((taskItem) => {
+            if (taskItem.startMinute !== 15)
+                return taskItem;
+        });
+        localStorage.removeItem('tasks');
     }
 
     static getFromStorage() {
-        return localStorage.getItem('task');
+        return JSON.parse(localStorage.getItem('tasks'));
+    }
+}
+
+//have to work validations from here
+if ((startHr >= 0 && startHr <= 23) && (startMin >= 0 && startMin <= 59)) {
+        const task = new Task(tstName, startHr, startMin, endHr, endMin);
+        UI.addToList(task);
+        UI.clearFields();
+
+    } else {
+        console.log('min 0- 59 and hr 0 - 23');
     }
 
-}
+*/

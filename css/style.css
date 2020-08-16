@@ -35,17 +35,6 @@ body{
     background-color: #31a131;
 }
 
-/***Change this as soon as project 3 is finishend***/
-.project3{
-    cursor: not-allowed;
-}
-
-.project3:hover{
-    background-color: #024402;
-    opacity: 0.2;
-}
-/************* End **************/
-
 .contact{
     margin-bottom: 25px;
     display: flex;
