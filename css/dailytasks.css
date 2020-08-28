@@ -11,7 +11,8 @@ body{
 .dailyTask{
     background-color: rgb(185, 185, 238);
     width: 700px;
-    padding: 0 10px
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 .row{
@@ -37,12 +38,23 @@ h1, p{
     width: 100%;
     border: none;
     border-radius: 5px;
+    outline: none;
+}
+
+#btn-save:hover{
+    cursor: pointer;
+}
+
+#btn-save:active{
+    background-color:  rgb(86, 86, 226);
+    transform: translateY(4px);
 }
 
 input[type]{
     height: 26px;
-    border-radius: 3px;
-    border: none
+    border: none;
+    border-radius: 5px;
+    outline-color: rgb(126, 126, 223);
 }
 
 .dailyTaskTable{
