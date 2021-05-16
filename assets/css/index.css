@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Mulish:wght@300&display=swap');
+*{  box-sizing: border-box}
+/*
+body{
+    background-color: #001a00;
+    background-color: #fff;
+    font-size: 1.3em;
+    font-family: 'Mulish', sans-serif;
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}*/
+
+body{
+    margin: 0px;
+    font-size: 1.3em;
+    font-family: 'Mulish', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.active-link{
+    border-bottom: 2px #fff solid;
+}
+
+span{
+   color: grey;
+}
+
+section{
+    padding: 16px;
+}
+
+.about h1, .about > p {
+    padding-top: 20px;
+}
+
+.about{
+    margin-top: 20px;
+}
+.skills{
+    text-align: left;
+}
+
+.skills .fab{
+    font-size: 60px;
+    margin-right: 18px;
+}
+
+.fa-html5{
+    color: red;
+}
+
+.fa-css3-alt{
+    color: blue;
+}
+
+.fa-js{
+    color: yellow;
+    background-color:radial-gradient(black 50%, transparent 50%);
+}
+
+.fa-js{
+    color: yellow;
+    position: relative;
+}
+
+.fa-bootstrap{
+    color: rgb(89, 89, 219);
+}
+
+.fa-java{
+  color: blue;  
+}
+
+.fa-node{
+    color: green;
+}
+
+.fa-angular{
+    color: red;
+}
+
+.fa-js:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    bottom: 3px;
+    left: 4px;
+    background: black;
+    z-index: 0;
+}
+  
+.fa-js:before {
+    z-index: 1;
+    position: relative;
+}
+
+.express{
+    color: grey;
+    display: inline;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(214, 209, 209);
+    padding: 20px; 
+    width: 100%;
+}
+
+@media(min-width: 680px){
+    
+}
+

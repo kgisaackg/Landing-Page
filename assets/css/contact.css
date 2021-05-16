@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: 'Mulish', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.active-link{
+    border-bottom: 2px #fff solid;
+}
+
+
+.contact{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-smile{
+    font-size: 100px;
+    color: rgb(62, 34, 165);
+    margin-right: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(214, 209, 209);
+    padding: 20px; 
+}

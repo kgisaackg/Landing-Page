@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dev minds</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/devminds.css">
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="logo">
+            </div>
+            <div class="fas fa-bars nav-btn">
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ourservice">Our Service</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div>
+            <h1>
+                We design modern softwares.<br/>
+                We want the users to have an amazing experiance.
+            </h1>
+        </div>
+    </section>
+
+    <section id="ourservice">
+        <div class="ourservice">
+            <div class="service">
+                <h2>Websites</h2>
+                <p>
+                    We create an awesome website that will meet your business needs.
+                    Our designs are influenced by your brands, which makes it easier
+                    to communicate your message, to readers. 
+                </p>
+            </div>
+            <div class="service">
+                <h2>Redesign Websites</h2>
+                <p>
+                    We transform websites into responsive sites. 
+                    Which is basically making them look good in devices such phone, 
+                    tablets, etc. We give existing sites modern look. 
+                </p>
+            </div>
+            <div class="service">
+                <h2>Mobile Solutions</h2>
+                <p>
+                    We create amazing mobile applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="item">
+            <h2><i class="fas fa-video"></i>Movie Application</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                orem ipsum, dolor sit amet consectetur adipisicing elit
+                . Recusandae repudiandae quia distinctio quos
+                temporibus hic nemo sapiente porro, omnis provident?
+            </p>
+            <h2><i class="fas fa-tasks"></i> Task Manager</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                orem ipsum, dolor sit amet consectetur adipisicing elit
+                . Recusandae repudiandae quia distinctio quos
+                temporibus hic nemo sapiente porro, omnis provident?
+            </p>
+            <h2><i class="fas fa-bug"></i> Bug tracker</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                orem ipsum, dolor sit amet consectetur adipisicing elit
+                . Recusandae repudiandae quia distinctio quos
+                temporibus hic nemo sapiente porro, omnis provident?
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+
+            <div style="color:#fff">.</div><!--To place sort of margin top-->
+
+            <p><b>Contact info:</b></p>
+            <div>
+                Location: <i>Developer mode 1st street, Building Constantly Coding</i>
+            </div>
+            <div class="icon-contacts">
+                <a href="#contact"><i class="fab fa-instagram"></i></a>
+                <a href="#contact"><i class="fab fa-twitter"></i></a>
+                <a href="#contact"><i class="fab fa-facebook-f"></i></a>
+                <a href="#contact"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div>
+                <b>Email us</b><br/><br>
+                 <!--Contact form-->
+                 <form class="contact-form">
+                     <input type="text" placeholder="Subject *"><br><br>
+                     <input type="text" placeholder="E-mail *"><br><br>
+                     <textarea name="" rows="3">Your message
+                     </textarea><br><br>
+                     <input class="btn-submit" type="submit" value="Submit">
+                 </form>
+            </div>
+            <div>
+                &copy; copyright devminds | <i>developer Isaac</i>
+            </div>
+        </section>
+        <script >
+        	 document.querySelector('.nav-btn').addEventListener('click', ()=>{
+            document.querySelector('.navigation').classList.toggle("show-navigation");
+        });
+        </script>
+</body>
+</html>
