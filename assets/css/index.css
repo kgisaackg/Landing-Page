@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Mulish:wght@300&display=swap');
 *{  box-sizing: border-box}
-/*
-body{
-    background-color: #001a00;
-    background-color: #fff;
-    font-size: 1.3em;
-    font-family: 'Mulish', sans-serif;
-    width: 80%;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}*/
 
 body{
     margin: 0px;
@@ -127,7 +113,5 @@ footer{
     width: 100%;
 }
 
-@media(min-width: 680px){
-    
-}
+
 
